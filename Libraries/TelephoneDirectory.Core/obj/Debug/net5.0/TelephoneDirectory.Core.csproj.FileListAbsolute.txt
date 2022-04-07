@@ -1,0 +1,12 @@
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.csproj.AssemblyReference.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.AssemblyInfoInputs.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.AssemblyInfo.cs
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.csproj.CoreCompileInputs.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\bin\Debug\net5.0\TelephoneDirectory.Core.deps.json
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\bin\Debug\net5.0\TelephoneDirectory.Core.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\bin\Debug\net5.0\TelephoneDirectory.Core.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\refint\TelephoneDirectory.Core.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\ref\TelephoneDirectory.Core.dll

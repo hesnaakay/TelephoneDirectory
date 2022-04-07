@@ -1,0 +1,38 @@
+﻿@model TelephoneDirectory.Libraries.Core.HomeDto
+@{
+    ViewData["Title"] = "ContactList";
+}
+<div class="container">
+    <h2>Contact List</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>PhoneNumber</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                    <th>UserId</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ foreach (var item in Model.contactList)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.PhoneNumber</td>
+                            <td>@item.Email</td>
+                            <td>@item.Location</td>
+                            <td>@item.UserId</td>
+                              <td>
+                                <div class="row">
+                                    <a type="button" href="/Contact/RemoveContact/@item.Id/@item.UserId" class="btn btn-outline-danger btn-sm m-0 waves-effect">Remove</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }}
+            </tbody>
+        </table>
+    </div>
+</div>

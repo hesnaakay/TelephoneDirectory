@@ -1,0 +1,36 @@
+﻿@model TelephoneDirectory.Libraries.Core.ContactDto
+<div class="row">
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Add Contact Form</h4>
+        <form class="needs-validation" method="post" asp-controller="Contact" asp-action="AddContact">
+            <input name="UserId" value="@ViewData["userid"]" hidden />
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">PhoneNumber</label>
+                    <input type="text" class="form-control" name="PhoneNumber" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid phone number is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Email</label>
+                    <input type="text" class="form-control" name="Email" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid email is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="address">Location</label>
+                <input type="text" class="form-control" name="Location" placeholder="" required="">
+                <div class="invalid-feedback">
+                    Please enter your location.
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Save</button>
+        </form>
+    </div>
+</div>

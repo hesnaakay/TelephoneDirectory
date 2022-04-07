@@ -1,0 +1,15 @@
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\TelephoneDirectory.Data.csproj.AssemblyReference.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\TelephoneDirectory.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\TelephoneDirectory.Data.AssemblyInfoInputs.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\TelephoneDirectory.Data.AssemblyInfo.cs
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\TelephoneDirectory.Data.csproj.CoreCompileInputs.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\bin\Debug\net5.0\TelephoneDirectory.Data.deps.json
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\bin\Debug\net5.0\TelephoneDirectory.Data.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\bin\Debug\net5.0\TelephoneDirectory.Data.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\bin\Debug\net5.0\TelephoneDirectory.Core.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\bin\Debug\net5.0\TelephoneDirectory.Core.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\TelephoneDirectory.Data.csproj.CopyComplete
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\TelephoneDirectory.Data.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\refint\TelephoneDirectory.Data.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\TelephoneDirectory.Data.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Data\obj\Debug\net5.0\ref\TelephoneDirectory.Data.dll

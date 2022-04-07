@@ -1,0 +1,35 @@
+﻿@model TelephoneDirectory.Libraries.Core.UserDto
+<div class="row">
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Add User Form</h4>
+        <form class="needs-validation" method="post" asp-controller="User" asp-action="AddUser">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" asp-for="Name" name="Name" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" asp-for="Surname" name="Surname" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="address">Company</label>
+                <input type="text" class="form-control" asp-for="Company" name="Company" placeholder="" required="">
+                <div class="invalid-feedback">
+                    Please enter your company.
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Save</button>
+        </form>
+    </div>
+</div>

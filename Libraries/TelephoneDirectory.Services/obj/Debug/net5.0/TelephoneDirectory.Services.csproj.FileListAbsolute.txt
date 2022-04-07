@@ -1,0 +1,17 @@
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\bin\Debug\net5.0\TelephoneDirectory.Services.deps.json
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\bin\Debug\net5.0\TelephoneDirectory.Services.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\bin\Debug\net5.0\TelephoneDirectory.Services.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\bin\Debug\net5.0\TelephoneDirectory.Core.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\bin\Debug\net5.0\TelephoneDirectory.Data.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\bin\Debug\net5.0\TelephoneDirectory.Core.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\bin\Debug\net5.0\TelephoneDirectory.Data.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\TelephoneDirectory.Services.csproj.AssemblyReference.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\TelephoneDirectory.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\TelephoneDirectory.Services.AssemblyInfoInputs.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\TelephoneDirectory.Services.AssemblyInfo.cs
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\TelephoneDirectory.Services.csproj.CoreCompileInputs.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\TelephoneDirectory.Services.csproj.CopyComplete
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\TelephoneDirectory.Services.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\refint\TelephoneDirectory.Services.dll
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\TelephoneDirectory.Services.pdb
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Libraries\TelephoneDirectory.Services\obj\Debug\net5.0\ref\TelephoneDirectory.Services.dll
