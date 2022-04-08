@@ -14,7 +14,7 @@ Entity Bağlantımın Bulunduğu katman.
 
 # Service Katmanı
 
-Business Codlarımın bulunduğu katman update inster ve hesaplama gibi işlemlerimi yazdığım katman.
+Business kodlarının bulunduğu katman update insert ve hesaplama gibi işlemlerinin yapıldığı katman.
 
 ## Kullanılan Teknolojiler
 
