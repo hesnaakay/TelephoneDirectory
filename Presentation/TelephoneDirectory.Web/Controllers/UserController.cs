@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using TelephoneDirectory.Libraries.Core;
-using TelephoneDirectory.Libraries.Services;
+using TelephoneDirectory.Web.Models.User;
+using TelephoneDirectory.Web.Services;
 
 namespace TelephoneDirectory.Web.Controllers
 {
@@ -19,9 +19,9 @@ namespace TelephoneDirectory.Web.Controllers
             return View();
         }
         [HttpPost("AddUser")]
-        public async Task<IActionResult> AddUser(UserDto userDto)
+        public async Task<IActionResult> AddUser(UserCreateInput userCreateInput)
         {
-            var responseCreateReport = await _userService.CreateAsync(userDto);
+            var responseCreateReport = await _userService.CreateAsync(userCreateInput);
             return RedirectToAction("Index", "Home", "");
         }
         [HttpGet("RemoveUser/{userid}")]

@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using TelephoneDirectory.Web.Models.Contact;
 using TelephoneDirectory.Web.Services;
@@ -24,25 +23,25 @@ namespace TelephoneDirectory.Web.Controllers
             return View();
         }
 
-        //[HttpPost("AddContact")]
-        //public async Task<IActionResult> AddContact(ContactCreateInput contactCreateInput)
-        //{
-        //    var responseCreateContact = await _contactService.CreateAsync(contactCreateInput);
-        //    TempData["userid"] = responseCreateContact.Data.UserId;
-        //    return Redirect("/Contact/GetAllContact/" + responseCreateContact.Data.UserId);
-        //}
-     
-        //[HttpGet("GetAllContact/{userid}")]
-        //public async Task<IActionResult> GetAllContact(string userid)
-        //{
-        //    var contactViewModel = await _contactService.GetAllByUserIdAsync(userid);
-        //    return View(contactViewModel);
-        //}
-        //[HttpGet("RemoveContact/{contactid}/{userid}")]
-        //public async Task<IActionResult> RemoveContact(string contactid, string userid)
-        //{
-        //    var responseCreateContact = await _contactService.DeleteAsync(contactid);
-        //    return Redirect("/Contact/GetAllContact/" + userid);
-        //}
+        [HttpPost("AddContact")]
+        public async Task<IActionResult> AddContact(ContactCreateInput contactCreateInput)
+        {
+            var responseCreateContact = await _contactService.CreateAsync(contactCreateInput);
+            TempData["userid"] = responseCreateContact.UserId;
+            return Redirect("/Contact/GetAllContact/" + responseCreateContact.UserId);
+        }
+
+        [HttpGet("GetAllContact/{userid}")]
+        public async Task<IActionResult> GetAllContact(string userid)
+        {
+            var contactViewModel = await _contactService.GetAllByUserIdAsync(userid);
+            return View(contactViewModel);
+        }
+        [HttpGet("RemoveContact/{contactid}/{userid}")]
+        public async Task<IActionResult> RemoveContact(string contactid, string userid)
+        {
+            var responseCreateContact = await _contactService.DeleteAsync(contactid);
+            return Redirect("/Contact/GetAllContact/" + userid);
+        }
     }
 }

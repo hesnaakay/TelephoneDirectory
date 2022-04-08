@@ -2,9 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
-using TelephoneDirectory.Core.Dtos;
 using TelephoneDirectory.Libraries.Core;
-using TelephoneDirectory.Libraries.Services;
+using TelephoneDirectory.Web.Models;
+using TelephoneDirectory.Web.Models.Report;
+using TelephoneDirectory.Web.Services;
 
 namespace TelephoneDirectory.Web.Controllers
 {
@@ -28,36 +29,29 @@ namespace TelephoneDirectory.Web.Controllers
            var userData = await _userService.GetAllAsync();
            var reportData = await _reportService.GetAllAsync();
            var contactData = await _contactService.GetAllAsync();
-            HomeDto homeDto = new HomeDto
+            HomeViewModel homeViewModel = new HomeViewModel
             {
-                reportList = reportData.Data,
-                userList = userData.Data,
-                contactList = contactData.Data,
+                reportList = reportData,
+                userList = userData,
+                contactList = contactData,
             };
-            return View(homeDto);
+            return View(homeViewModel);
         }
 
 
-        public async Task<IActionResult> CreateReport(HomeMessagePostDto homeMessagePostDto)
+        public async Task<IActionResult> CreateReport(ReportCreateInput reportCreateInput)
         {
             var sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new Uri("queue:create-report-service"));
-            ReportCreateDto reportCreateDto = new ReportCreateDto
-            {
-                Location = homeMessagePostDto.location,
-                ReportStatus = false,
-                RequestTime = DateTime.Now,
-                TotalPhone = 0,
-                TotalUser = 0,
-                Deleted = false,
-            };
-
-            var responseCreateReport = await _reportService.CreateAsync(reportCreateDto);
-
+            reportCreateInput.ReportStatus = false;
+            reportCreateInput.RequestTime = DateTime.Now;
+            reportCreateInput.TotalPhone = 0;
+            reportCreateInput.TotalUser = 0;
+            reportCreateInput.Deleted = false;
+            var responseCreateReport = await _reportService.CreateAsync(reportCreateInput);
             CreateReportMessageCommand report = new CreateReportMessageCommand();
-            report.Location = responseCreateReport.Data.Location;
-            report.ReportId = responseCreateReport.Data.Id;
+            report.Location = responseCreateReport.Location;
+            report.ReportId = responseCreateReport.Id;
             await sendEndpoint.Send<CreateReportMessageCommand>(report);
-
             return RedirectToAction("Index");
         }
 
