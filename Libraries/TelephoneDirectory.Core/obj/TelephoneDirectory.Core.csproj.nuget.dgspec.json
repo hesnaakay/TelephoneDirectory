@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {}
+    "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {
+    "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj",
         "projectName": "TelephoneDirectory.Core",
-        "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj",
-        "packagesPath": "C:\\Users\\Zafer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\obj\\",
+        "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Zafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

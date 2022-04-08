@@ -4354,19 +4354,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Zafer\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj",
       "projectName": "TelephoneDirectory.Data",
-      "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj",
-      "packagesPath": "C:\\Users\\Zafer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\obj\\",
+      "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Zafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4380,8 +4380,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {
-              "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj"
+            "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {
+              "projectPath": "C:\\Users\\admin\\Documents\\GitHub\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj"
             }
           }
         }
@@ -4416,7 +4416,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

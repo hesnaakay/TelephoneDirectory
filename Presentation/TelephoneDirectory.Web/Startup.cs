@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TelephoneDirectory.Core.Models;
 using TelephoneDirectory.Libraries.Data;
 using TelephoneDirectory.Libraries.Services;
 
@@ -27,6 +28,23 @@ namespace TelephoneDirectory.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var serviceApiSettings = Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
+
+            services.AddHttpClient<IReportService, ReportService>(opt =>
+
+            {
+                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Report.Path}");
+            });
+            services.AddHttpClient<IContactService, ContactService>(opt =>
+
+            {
+                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Book.Path}");
+            });
+            services.AddHttpClient<IUserService, UserService>(opt =>
+
+            {
+                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Book.Path}");
+            });
             services.AddMassTransit(x =>
             {
                 // Default Port : 5672
