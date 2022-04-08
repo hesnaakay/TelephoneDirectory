@@ -21,3 +21,4 @@ C:\Users\admin\Documents\GitHub\TelephoneDirectory\Libraries\TelephoneDirectory.
 C:\Users\admin\Documents\GitHub\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.dll
 C:\Users\admin\Documents\GitHub\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\ref\TelephoneDirectory.Core.dll
 C:\Users\admin\Documents\GitHub\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.pdb
+C:\Users\admin\Documents\GitHub\TelephoneDirectory\Libraries\TelephoneDirectory.Core\obj\Debug\net5.0\TelephoneDirectory.Core.csprojAssemblyReference.cache
