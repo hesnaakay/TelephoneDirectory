@@ -1,7 +1,7 @@
 
 # TelephoneDirectory
 
-Birbirleri ile haberleşen iki microservice'in olduğu bir yapı ile basit bir telefon rehberi uygulaması
+Birbirleri ile haberleşen iki microservice'in olduğu bir yapı ile telefon rehberi uygulaması.Bu uygulamada rehbere kişi ekleyip çıkarabilir, kullanıcıya birden fazla iletişim bilgisi ekleyebilir, ayrıca konuma göre kişi ve telefon sayısını getiren bir rapor oluşturabilirsiniz.
 
 
 # Core Katmanı
