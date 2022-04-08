@@ -27,11 +27,11 @@ namespace TelephoneDirectory.Libraries.Services
 
             return Response<List<ReportDto>>.Success(_mapper.Map<List<ReportDto>>(contacts), 200);
         }
-        public async Task<ReportCollection> GetByIdAsync(string id)
+        public async Task<Response<ReportCollection>> GetByIdAsync(string id)
         {
             var contact = await _reportCollection.Find<ReportCollection>(x => x.Id == id).FirstOrDefaultAsync();
 
-            return contact;
+            return Response<ReportCollection>.Success(_mapper.Map<ReportCollection>(contact), 200);
         }
         public async Task<Response<ReportDto>> CreateAsync(ReportCreateDto ContactCreateDto)
         {

@@ -24,11 +24,7 @@
       ],
       "UpstreamPathTemplate": "/services/report/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamScheme": "http",
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": [ "photo_stock_fullpermission" ]
-      }
+      "UpstreamScheme": "http"
     }
   ],
   "GlobalConfiguration": {

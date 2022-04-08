@@ -8,7 +8,7 @@ namespace TelephoneDirectory.Libraries.Services
     public interface IReportService
     {
         Task<Response<List<ReportDto>>> GetAllAsync();
-        Task<ReportCollection> GetByIdAsync(string id);
+        Task<Response<ReportCollection>> GetByIdAsync(string id);
         Task<Response<ReportDto>> GetByLocationAsync(string location);
         Task<Response<ReportDto>> CreateAsync(ReportCreateDto ReportCreateDto);
         Task<Response<NoContent>> UpdateAsync(ReportDto ReportCreateDto);

@@ -4,11 +4,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
 using System;
 using TelephoneDirectory.Core.Models;
-using TelephoneDirectory.Libraries.Data;
-using TelephoneDirectory.Libraries.Services;
+using TelephoneDirectory.Web.Extensions;
+using TelephoneDirectory.Web.Services;
 
 namespace TelephoneDirectory.Web
 {
@@ -26,21 +25,7 @@ namespace TelephoneDirectory.Web
         {
             var serviceApiSettings = Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
-            services.AddHttpClient<IReportService, ReportService>(opt =>
-
-            {
-                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Report.Path}");
-            });
-            services.AddHttpClient<IContactService, ContactService>(opt =>
-
-            {
-                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Book.Path}");
-            });
-            services.AddHttpClient<IUserService, UserService>(opt =>
-
-            {
-                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Book.Path}");
-            });
+            
             services.AddMassTransit(x =>
             {
                 // Default Port : 5672
@@ -56,19 +41,12 @@ namespace TelephoneDirectory.Web
 
             services.AddMassTransitHostedService();
 
-            services.AddAutoMapper(typeof(GeneralMapping));
             services.AddScoped<IReportService, ReportService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IContactService, ContactService>();
 
-
+            services.AddHttpClientServices(Configuration);
             services.AddControllersWithViews();
-
-            services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
-            services.AddSingleton<IDatabaseSettings>(sp =>
-            {
-                return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

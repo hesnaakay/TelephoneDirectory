@@ -26,15 +26,14 @@ namespace TelephoneDirectory.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
+            HomeViewModel homeViewModel = new HomeViewModel();
            var userData = await _userService.GetAllAsync();
+            if(userData != null) homeViewModel.userList = userData; 
            var reportData = await _reportService.GetAllAsync();
+            if(reportData != null)homeViewModel.reportList = reportData;
            var contactData = await _contactService.GetAllAsync();
-            HomeViewModel homeViewModel = new HomeViewModel
-            {
-                reportList = reportData,
-                userList = userData,
-                contactList = contactData,
-            };
+            if(contactData !=null) homeViewModel.contactList = contactData;
+          
             return View(homeViewModel);
         }
 

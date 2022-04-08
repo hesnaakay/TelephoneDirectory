@@ -22,11 +22,11 @@ namespace TelephoneDirectory.Report.Messages
         {
             var contact = await _contactService.GetAllByLocationAsync(context.Message.Location);
             var reportDto = await _reportService.GetByIdAsync(context.Message.ReportId);
-            reportDto.TotalPhone = contact.Data.Count;
-            reportDto.TotalUser = contact.Data.Select(x => x.UserId).Distinct().Count();
-            reportDto.Location = context.Message.Location;
-            reportDto.ReportStatus = true;
-            await _reportService.UpdateAsync(reportDto);
+            reportDto.Data.TotalPhone = contact.Data.Count;
+            reportDto.Data.TotalUser = contact.Data.Select(x => x.UserId).Distinct().Count();
+            reportDto.Data.Location = context.Message.Location;
+            reportDto.Data.ReportStatus = true;
+            await _reportService.UpdateAsync(reportDto.Data);
         }
     }
 }
