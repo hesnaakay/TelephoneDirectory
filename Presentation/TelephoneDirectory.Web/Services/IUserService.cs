@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using TelephoneDirectory.Libraries.Core;
+using TelephoneDirectory.Web.Models.User;
 
 namespace TelephoneDirectory.Web.Services
 {
     public interface IUserService
     {
-        Task<List<UserDto>> GetAllAsync();
-        Task<UserDto> CreateAsync(UserDto UserDto);
-        Task<UserDto> GetByIdAsync(string id);
-        Task<NoContent> DeleteAsync(string id);
+        Task<List<UserViewModel>> GetAllAsync();
+        Task<UserViewModel> CreateAsync(UserCreateInput userCreateInput);
+        Task<UserViewModel> GetByIdAsync(string id);
+        Task<bool> DeleteAsync(string id);
 
     }
 }

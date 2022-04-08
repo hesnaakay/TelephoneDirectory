@@ -77,11 +77,11 @@ namespace TelephoneDirectory.Libraries.Services
                 return Response<NoContent>.Fail("Contact not found", 404);
             }
         }
-        public async Task<List<Contact>> GetAllByLocationAsync(string location)
+        public async Task<Response<List<Contact>>> GetAllByLocationAsync(string location)
         {
             var Contacts = await _contactCollection.Find<Contact>(x => x.Location == location).ToListAsync();
 
-            return Contacts;
+            return Response<List<Contact>>.Success(_mapper.Map<List<Contact>>(Contacts), 200);
         }
     }
 }

@@ -161,3 +161,4 @@ C:\Users\admin\Documents\GitHub\TelephoneDirectory\Presentation\TelephoneDirecto
 C:\Users\admin\Documents\GitHub\TelephoneDirectory\Presentation\TelephoneDirectory.Web\obj\Debug\net5.0\TelephoneDirectory.Web.Views.pdb
 C:\Users\admin\Documents\GitHub\TelephoneDirectory\Presentation\TelephoneDirectory.Web\obj\Debug\net5.0\TelephoneDirectory.Web.csproj.CopyComplete
 C:\Users\admin\Documents\GitHub\TelephoneDirectory\Presentation\TelephoneDirectory.Web\obj\Debug\net5.0\TelephoneDirectory.Web.genruntimeconfig.cache
+C:\Users\Zafer\Documents\Projects\TelephoneDirectory\Presentation\TelephoneDirectory.Web\bin\Debug\net5.0\TelephoneDirectory.Web.StaticWebAssets.xml
