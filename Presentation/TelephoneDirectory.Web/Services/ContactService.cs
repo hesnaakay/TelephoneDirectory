@@ -29,14 +29,14 @@ namespace TelephoneDirectory.Web.Services
 
             return responseSuccess.Data;
         }
-        public async Task<List<ContactViewModel>> GetByIdAsync(string id)
+        public async Task<ContactViewModel> GetByIdAsync(string id)
         {
             var response = await _client.GetAsync($"contacts/{id}");
             if (!response.IsSuccessStatusCode)
             {
                 return null;
             }
-            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<ContactViewModel>>>();
+            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<ContactViewModel>>();
 
             return responseSuccess.Data;
         }

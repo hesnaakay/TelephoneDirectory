@@ -13,8 +13,4 @@
     <ProjectReference Include="..\..\Libraries\TelephoneDirectory.Services\TelephoneDirectory.Services.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\Report\" />
-  </ItemGroup>
-
 </Project>

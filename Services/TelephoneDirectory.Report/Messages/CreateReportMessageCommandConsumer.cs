@@ -22,8 +22,8 @@ namespace TelephoneDirectory.Report.Messages
         {
             var contact = await _contactService.GetAllByLocationAsync(context.Message.Location);
             var reportDto = await _reportService.GetByIdAsync(context.Message.ReportId);
-            reportDto.TotalPhone = contact.Count;
-            reportDto.TotalUser = contact.Select(x => x.UserId).Distinct().Count();
+            reportDto.TotalPhone = contact.Data.Count;
+            reportDto.TotalUser = contact.Data.Select(x => x.UserId).Distinct().Count();
             reportDto.Location = context.Message.Location;
             reportDto.ReportStatus = true;
             await _reportService.UpdateAsync(reportDto);
