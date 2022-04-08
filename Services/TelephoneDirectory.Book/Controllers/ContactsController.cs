@@ -65,5 +65,13 @@ namespace TelephoneDirectory.Services.Controllers
 
             return CreateActionResultInstance(response);
         }
+        [HttpGet]
+        [Route("/api/[controller]/GetAllByLocationAsync/{location}")]
+        public async Task<IActionResult> GetAllByLocationAsync(string location)
+        {
+            var response = await _contactService.GetAllByLocationAsync(location);
+
+            return CreateActionResultInstance(response);
+        }
     }
 }

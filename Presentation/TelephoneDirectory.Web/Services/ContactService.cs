@@ -17,7 +17,7 @@ namespace TelephoneDirectory.Web.Services
             _client = client;
         }
 
-        public async Task<List<ContactDto>> GetAllAsync()
+        public async Task<List<ContactViewModel>> GetAllAsync()
         {
             var response = await _client.GetAsync("contacts");
 
@@ -26,66 +26,70 @@ namespace TelephoneDirectory.Web.Services
                 return null;
             }
 
-            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<ContactDto>>>();
+            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<ContactViewModel>>>();
 
             return responseSuccess.Data;
         }
-        //public async Task<List<ContactViewModel>> GetByIdAsync(string id)
-        //{
-        //    var response = await _client.GetAsync($"contacts/GetByIdAsync/{id}");
-        //    if (!response.IsSuccessStatusCode)
-        //    {
-        //        return null;
-        //    }
+        public async Task<List<ContactViewModel>> GetByIdAsync(string id)
+        {
+            var response = await _client.GetAsync($"contacts/{id}");
+            if (!response.IsSuccessStatusCode)
+            {
+                return null;
+            }
+            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<ContactViewModel>>>();
 
-        //    var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<ContactViewModel>>>();
+            return responseSuccess.Data;
+        }
+        public async Task<List<ContactViewModel>> GetAllByUserIdAsync(string userId)
+        {
+            var response = await _client.GetAsync($"contacts/GetAllByUserIdAsync/{userId}");
+            if (!response.IsSuccessStatusCode)
+            {
+                return null;
+            }
+            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<ContactViewModel>>>();
 
-        //    return responseSuccess.Data;
-        //}
-        //public async Task<List<ContactDto>> GetAllByUserIdAsync(string userId)
-        //{
-        //    var response = await _client.GetAsync($"contacts/GetAllByUserIdAsync/{userId}");
-        //    if (!response.IsSuccessStatusCode)
-        //    {
-        //        return null;
-        //    }
+            return responseSuccess.Data;
+        }
 
-        //    var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<ContactDto>>>();
+        public async Task<ContactViewModel> CreateAsync(ContactCreateInput contactCreateInput)
+        {
+            var response = await _client.PostAsJsonAsync<ContactCreateInput>("contacts", contactCreateInput);
 
-        //    return responseSuccess.Data;
-        //}
+            if (!response.IsSuccessStatusCode)
+            {
+                return null;
+            }
+            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<ContactViewModel>>();
 
-        //public async Task<bool> CreateAsync(ContactCreateInput contactCreateInput)
-        //{
-        //    var response = await _client.PostAsJsonAsync<ContactCreateInput>("contacts", contactCreateInput);
+            return responseSuccess.Data;
+        }
 
-        //    return response.IsSuccessStatusCode;
-        //}
+        public async Task<bool> UpdateAsync(ContactUpdateInput contactUpdateInput)
+        {
+            var response = await _client.PutAsJsonAsync<ContactUpdateInput>("contacts", contactUpdateInput);
 
-        //public async Task<bool> UpdateAsync(ContactUpdateInput contactUpdateInput)
-        //{
-        //    var response = await _client.PutAsJsonAsync<ContactUpdateInput>("contacts", contactUpdateInput);
+            return response.IsSuccessStatusCode;
+        }
 
-        //    return response.IsSuccessStatusCode;
-        //}
+        public async Task<bool> DeleteAsync(string id)
+        {
+            var response = await _client.DeleteAsync($"contacts/{id}");
 
-        //public async Task<bool> DeleteAsync(string id)
-        //{
-        //    var response = await _client.DeleteAsync($"contacts/{id}");
+            return response.IsSuccessStatusCode;
+        }
+        public async Task<List<ContactViewModel>> GetAllByLocationAsync(string location)
+        {
+            var response = await _client.GetAsync($"contacts/GetAllByLocationAsync/{location}");
+            if (!response.IsSuccessStatusCode)
+            {
+                return null;
+            }
 
-        //    return response.IsSuccessStatusCode;
-        //}
-        //public async Task<List<Contact>> GetAllByLocationAsync(string location)
-        //{
-        //    var response = await _client.GetAsync($"contacts/GetAllByLocationAsync/{location}");
-        //    if (!response.IsSuccessStatusCode)
-        //    {
-        //        return null;
-        //    }
+            var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<ContactViewModel>>>();
 
-        //    var responseSuccess = await response.Content.ReadFromJsonAsync<Response<List<Contact>>>();
-
-        //    return responseSuccess.Data;
-        //}
+            return responseSuccess.Data;
+        }
     }
 }

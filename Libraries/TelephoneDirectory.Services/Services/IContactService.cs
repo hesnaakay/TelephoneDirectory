@@ -12,7 +12,7 @@ namespace TelephoneDirectory.Libraries.Services
         Task<Response<List<ContactDto>>> GetAllByUserIdAsync(string userId);
         Task<Response<ContactDto>> CreateAsync(ContactCreateDto ContactCreateDto);
         Task<Response<NoContent>> UpdateAsync(ContactDto ContactUpdateDto);
-        Task<List<Contact>> GetAllByLocationAsync(string location);
         Task<Response<NoContent>> DeleteAsync(string id);
+        Task<Response<List<Contact>>> GetAllByLocationAsync(string location);
     }
 }

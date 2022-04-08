@@ -8,12 +8,12 @@ namespace TelephoneDirectory.Web.Services
 {
     public interface IContactService
     {
-        Task<List<ContactDto>> GetAllAsync();
-        //Task<List<ContactDto>> GetByIdAsync(string id);
-        //Task<List<ContactViewModel>> GetAllByUserIdAsync(string userId);
-        //Task<bool> CreateAsync(ContactCreateInput contactCreateInput);
-        //Task<bool> UpdateAsync(ContactDto ContactUpdateDto);
-        //Task<List<Contact>> GetAllByLocationAsync(string location);
-        //Task<bool> DeleteAsync(string id);
+        Task<List<ContactViewModel>> GetAllAsync();
+        Task<List<ContactViewModel>> GetByIdAsync(string id);
+        Task<List<ContactViewModel>> GetAllByUserIdAsync(string userId);
+        Task<ContactViewModel> CreateAsync(ContactCreateInput contactCreateInput);
+        Task<bool> UpdateAsync(ContactUpdateInput ContactUpdateDto);
+        Task<bool> DeleteAsync(string id);
+        Task<List<ContactViewModel>> GetAllByLocationAsync(string location);
     }
 }
