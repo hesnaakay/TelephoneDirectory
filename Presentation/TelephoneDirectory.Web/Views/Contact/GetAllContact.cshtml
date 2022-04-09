@@ -1,4 +1,4 @@
-﻿@model TelephoneDirectory.Web.Models.HomeViewModel
+﻿@model List<TelephoneDirectory.Web.Models.Contact.ContactViewModel>
 @{
     ViewData["Title"] = "ContactList";
 }
@@ -17,7 +17,7 @@
                 </tr>
             </thead>
             <tbody>
-                @{ foreach (var item in Model.contactList)
+                @{ foreach (var item in Model)
                     {
                         <tr>
                             <td>@item.Id</td>

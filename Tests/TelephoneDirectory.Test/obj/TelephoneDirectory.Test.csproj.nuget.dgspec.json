@@ -1,0 +1,380 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Tests\\TelephoneDirectory.Test\\TelephoneDirectory.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj",
+        "projectName": "TelephoneDirectory.Core",
+        "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj",
+        "packagesPath": "C:\\Users\\Zafer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Zafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj",
+        "projectName": "TelephoneDirectory.Data",
+        "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj",
+        "packagesPath": "C:\\Users\\Zafer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Zafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {
+                "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Services\\TelephoneDirectory.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Services\\TelephoneDirectory.Services.csproj",
+        "projectName": "TelephoneDirectory.Services",
+        "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Services\\TelephoneDirectory.Services.csproj",
+        "packagesPath": "C:\\Users\\Zafer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Zafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {
+                "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj"
+              },
+              "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj": {
+                "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Data\\TelephoneDirectory.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Services\\TelephoneDirectory.Book\\TelephoneDirectory.Book.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Services\\TelephoneDirectory.Book\\TelephoneDirectory.Book.csproj",
+        "projectName": "TelephoneDirectory.Book",
+        "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Services\\TelephoneDirectory.Book\\TelephoneDirectory.Book.csproj",
+        "packagesPath": "C:\\Users\\Zafer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Services\\TelephoneDirectory.Book\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Zafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj": {
+                "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Core\\TelephoneDirectory.Core.csproj"
+              },
+              "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Services\\TelephoneDirectory.Services.csproj": {
+                "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Services\\TelephoneDirectory.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.1.7, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.1.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Tests\\TelephoneDirectory.Test\\TelephoneDirectory.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Tests\\TelephoneDirectory.Test\\TelephoneDirectory.Test.csproj",
+        "projectName": "TelephoneDirectory.Test",
+        "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Tests\\TelephoneDirectory.Test\\TelephoneDirectory.Test.csproj",
+        "packagesPath": "C:\\Users\\Zafer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Tests\\TelephoneDirectory.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Zafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Services\\TelephoneDirectory.Services.csproj": {
+                "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Libraries\\TelephoneDirectory.Services\\TelephoneDirectory.Services.csproj"
+              },
+              "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Services\\TelephoneDirectory.Book\\TelephoneDirectory.Book.csproj": {
+                "projectPath": "C:\\Users\\Zafer\\Documents\\Projects\\TelephoneDirectory\\Services\\TelephoneDirectory.Book\\TelephoneDirectory.Book.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.6.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.TestHost": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.17.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

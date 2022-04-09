@@ -56,7 +56,7 @@ namespace TelephoneDirectory.Report
 
             services.AddMassTransitHostedService();
 
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(GeneralMapping));
             services.AddControllers();
 
 

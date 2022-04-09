@@ -42,7 +42,7 @@ namespace TelephoneDirectory.Web.Services
         }
         public async Task<List<ContactViewModel>> GetAllByUserIdAsync(string userId)
         {
-            var response = await _client.GetAsync($"contacts/GetAllByUserIdAsync/{userId}");
+            var response = await _client.GetAsync($"Contacts/GetAllByUserId/{userId}");
             if (!response.IsSuccessStatusCode)
             {
                 return null;
