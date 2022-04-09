@@ -1,7 +1,7 @@
 
 # TelephoneDirectory
 
-Birbirleri ile haberleşen iki microservice'in olduğu bir yapı ile basit bir telefon rehberi uygulaması
+Birbirleri ile haberleşen iki microservice'in olduğu bir yapı ile telefon rehberi uygulaması.Bu uygulamada rehbere kişi ekleyip çıkarabilir, kullanıcıya birden fazla iletişim bilgisi ekleyebilir, ayrıca konuma göre kişi ve telefon sayısını getiren bir rapor oluşturabilirsiniz.
 
 
 # Core Katmanı
@@ -14,7 +14,7 @@ Entity Bağlantımın Bulunduğu katman.
 
 # Service Katmanı
 
-Business Codlarımın bulunduğu katman update inster ve hesaplama gibi işlemlerimi yazdığım katman.
+Business kodlarının bulunduğu katman update insert ve hesaplama gibi işlemlerinin yapıldığı katman.
 
 ## Kullanılan Teknolojiler
 
